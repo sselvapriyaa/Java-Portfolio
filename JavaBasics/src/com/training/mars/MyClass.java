@@ -4,6 +4,8 @@ public class MyClass {
 	static int age;
 	public static void main(String args[]) {
 		System.out.println("This is my first JAVA file");
+		System.out.println("New change");
+		
 		byte number = 12;
 		System.out.println("Byte value is " +number);
 		short shortValue = 48;
