@@ -1,5 +1,5 @@
 package com.training.mars;
-import com.training.mars.Employee;
+
 public class MyEmployeeClass {
 	public static void main(String args[]) {
 		Employee e1 = new Employee();

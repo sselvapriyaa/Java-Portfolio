@@ -9,7 +9,7 @@ public class DisplayDays {
 		int number_Of_DaysInMonth = 0;
 		String MonthOfName = "Unknown";
 		
-		System.out.println("Input a month number: ");
+		System.out.print("Input a month number: ");
 		int month = input.nextInt();
 		
 		System.out.println("Input a year: ");
@@ -69,9 +69,9 @@ public class DisplayDays {
 				MonthOfName =  "December";
 				number_Of_DaysInMonth = 31;
 				break;
-				
+			
 		}
-		System.out.println(MonthOfName + " " + year + " has " + number_Of_DaysInMonth + " days\n " );						
+		System.out.print(MonthOfName + " " + year + " has " + number_Of_DaysInMonth + " days\n " );						
 		
 		input.close();
 	}
