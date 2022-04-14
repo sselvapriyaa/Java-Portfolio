@@ -4,18 +4,26 @@ public class Person {
 	private int height; // instance variable
 	private int weight; // instance variable
 	
+	public Person(){ // no-arg constructor
+		System.out.println("Person Object created...");
+		//super();
+	}
 	
+	public Person(int height, int weight) { // constructor with fields
+		super();
+		this.height = height;
+		this.weight = weight;
+	}
+	//getters and setters
 	
 	public int getHeight() {
 		return height;
 	}
 
 
-
 	public void setHeight(int height) {
 		this.height = height;
 	}
-
 
 
 	public int getWeight() {

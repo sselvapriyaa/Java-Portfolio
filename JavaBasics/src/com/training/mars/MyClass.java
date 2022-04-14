@@ -22,12 +22,16 @@ public class MyClass {
 		p1.setHeight(170);
 		p1.setWeight(80);
 		System.out.println(p1.getPersonInfo());
-		
+	
 		
 		Person p2 = new Person();
 		p2.setHeight(180);
 		p2.setWeight(75);
 		System.out.println(p2.getPersonInfo());
+		
+		
+		Person p3 = new Person(190, 95);
+		System.out.println(p3.getPersonInfo());
 		
 		
 		 
