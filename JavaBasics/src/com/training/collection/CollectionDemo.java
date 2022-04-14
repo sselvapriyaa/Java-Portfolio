@@ -1,9 +1,4 @@
 package com.training.collection;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -28,11 +23,11 @@ public class CollectionDemo {
 		for(int num: values) {
 			System.out.println(num);
 		}*/
-		Student stud1 = new Student("Selva", 12, "B");
+		/*Student stud1 = new Student("Selva", 12, "B");
 		Student stud2 = new Student("Priya", 10, "C");
 		Student stud3 = new Student("Anand", 12, "A");
 		Student stud4 = new Student("Kevin", 13, "B");
-		Student stud5 = new Student("Selva", 12, "B");
+		Student stud5 = new Student("Selva", 12, "B");*/
 		
 		//Set<Student> studentSet = new HashSet<>();
 		Set<String> names = new TreeSet<>();
