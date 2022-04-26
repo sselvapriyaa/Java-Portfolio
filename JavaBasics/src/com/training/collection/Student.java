@@ -1,6 +1,8 @@
 package com.training.collection;
 
-public class Student {
+import java.util.Objects;
+
+public class Student implements Comparable<Student>  {
 	private String name;
 	private int rollNo;
 	private String grade;
@@ -11,25 +13,61 @@ public class Student {
 		this.rollNo = rollNo;
 		this.grade = grade;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public int getRollNo() {
 		return rollNo;
 	}
+
 	public void setRollNo(int rollNo) {
 		this.rollNo = rollNo;
 	}
+
 	public String getGrade() {
 		return grade;
 	}
+
 	public void setGrade(String grade) {
 		this.grade = grade;
-		System.out.println("Selva");
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(grade, name, rollNo);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Student other = (Student) obj;
+		return Objects.equals(grade, other.grade) && Objects.equals(name, other.name) && rollNo == other.rollNo;
 	}
 	
+@Override
+	public int compareTo(Student o) {
+		//Student stud = (Student)o;
+		return this.getName().compareTo(o.getName());
+		
+	}
 
-}
+
+	}
+
+	
+	
+	
+	
+
+
